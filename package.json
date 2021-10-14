@@ -1,12 +1,10 @@
 {
 	"name": "throttleonweakdevice",
 	"version": "0.0.1",
-	"description": "throttle/debounce only on weak devices",
+	"description": "A tiny lib for throttle/debounce only on weak devices",
 	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mkupriichuk/throttleonweakdevice"
-	},
+	"repository": "mkupriichuk/throttleonweakdevice",
+	"homepage": "https://github.com/mkupriichuk/throttleonweakdevice#readme",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
