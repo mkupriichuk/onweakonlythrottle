@@ -1,0 +1,21 @@
+{
+	"name": "throttleonweakdevice",
+	"version": "0.0.1",
+	"description": "throttle/debounce only on weak devices",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"throttle",
+		"debounce",
+		"lodash.debounce",
+		"lodash.throttle"
+	],
+	"author": "Maksym Kupriichuk",
+	"license": "ISC",
+	"dependencies": {
+		"lodash.debounce": "^4.0.8",
+		"lodash.throttle": "^4.1.1"
+	}
+}
