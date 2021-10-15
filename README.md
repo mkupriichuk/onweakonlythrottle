@@ -36,11 +36,9 @@ By default a weak device is checked using the following expression:
 
 ```js
 const _isWeakDevice =
-	(window.navigator.hardwareConcurrency <= 4 &&
-		/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-			navigator.userAgent
-		)) ||
-	window.navigator.hardwareConcurrency <= 2;
+	(window.navigator.hardwareConcurrency <= 4
+	&& /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+	|| window.navigator.hardwareConcurrency <= 2;
 ```
 
 However you can replace it or merge with:
@@ -56,10 +54,14 @@ const logWithThrottle = throttleOnWeak(_log, 300)
 
 const isIE = /MSIE|Trident/.test(navigator.userAgent);
 
-const logWithDebounceOnIe = debounceOnWeak(_log, 300, _, isIE) // !!You need a pass custom checker as the fourth parameter beause is three - lodash.debounce/throttle options (see links below)
+const logWithDebounceOnIe = debounceOnWeak(_log, 300, _, isIE)
+/* !!You need a pass custom checker as the fourth parameter,
+because is three - lodash.debounce/throttle options (see links below) */
 
 
-const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, _, {merge: true, exp: isIE}) // if checker is a string it will replace the default one (as above). But you can pass a object with two parameters: merge: true and exp: your checker. Then they will merge
+const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, _, {merge: true, exp: isIE})
+/* if checker is a string it will replace the default one (as above).
+But you can pass a object with two parameters: merge: true and exp: your checker. Then they will merge */
 
 document.addEventListener('scroll', logWithThrottle);
 // with arguments
