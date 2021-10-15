@@ -61,7 +61,9 @@ because is three - lodash.debounce/throttle options (see links below) */
 
 const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, {leading: true}, {merge: true, exp: isIE})
 /* if checker is a string it will replace the default one (as above).
-But you can pass a object with two parameters: merge: true and exp: your checker. Then they will merge. ({leading: true} this is one of the options that lodash can use (links below)) */
+But you can pass a object with two parameters: merge: true and exp: your checker.
+Then they will merge.
+({leading: true} this is one of the options that lodash can use (links below)) */
 
 document.addEventListener('scroll', logWithThrottle);
 // with arguments
