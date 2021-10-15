@@ -64,7 +64,7 @@ const logWithDebounceOnIe = debounceOnWeak(_log, 300, _, isIE)
 const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, {leading: true}, {merge: true, exp: isIE})
 /* Если Вы передаете в качестве проверки строку - она заменит собой стандартую (как в примере выше).
 Но Вы так же можете передать обьект с двумя опциями: merge: true и exp: ваше выражение.
-Тогда они будут слиты */
+Тогда они будут слиты. ({leading: true} это одна из опций, которую может использовать лодаш (ссылки внизу))  */
 
 document.addEventListener('scroll', logWithThrottle);
 // с аргументами
