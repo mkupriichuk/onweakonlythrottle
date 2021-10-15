@@ -55,8 +55,8 @@ const logWithThrottle = throttleOnWeak(_log, 300)
 const isIE = /MSIE|Trident/.test(navigator.userAgent);
 
 const logWithDebounceOnIe = debounceOnWeak(_log, 300, _, isIE)
-/* !!You need a pass custom checker as the fourth parameter,
-because is three - lodash.debounce/throttle options (see links below) */
+/* !!You need to pass custom checker as the fourth parameter,
+because the third is lodash.debounce/throttle options (see links below) */
 
 
 const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, {leading: true}, {merge: true, exp: isIE})
