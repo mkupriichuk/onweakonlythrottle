@@ -6,11 +6,11 @@
  * @param {boolean|{merge: boolean, exp: boolean}} [condition] condition
  * @returns {Function} Return a function or functionWithThrottle
  */
-export function throttleOnWeak<T>(
-	func: T,
+ export function throttleOnWeak<T extends any[]>(
+	func: (...args: T) => unknown,
 	ms: number, options?: {leading?: boolean, trailing?: boolean}|undefined|null,
 	condition?: boolean | {merge: boolean, exp: boolean})
-	: T
+	: (...args: T) => unknown
 
 	/**
  * Return a function or functionWithDebounce
@@ -20,6 +20,6 @@ export function throttleOnWeak<T>(
  * @param {boolean|{merge: boolean, exp: boolean}} [condition] condition
  * @returns {Function} Return a function or functionWithDebounce
  */
-export function debounceOnWeak<T>(func: T,
+export function debounceOnWeak<T extends any[]>(func: (...args: T) => unknown,
 ms: number, options?: {leading?: boolean, trailing?: boolean, maxWait?: number}|undefined|null,
-condition?: boolean | {merge: boolean, exp: boolean}): T
+condition?: boolean | {merge: boolean, exp: boolean}): (...args: T) => unknown
