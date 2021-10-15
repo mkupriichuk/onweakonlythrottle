@@ -73,5 +73,5 @@ document.addEventListener('scroll', logWithDebounceOnIeAndDefaultWeak);
 
 ## Лодаш ссылки
 
-[Lodash throttle](https://lodash.com/docs/4.17.15#throttle) < /br>
-[Lodash debounce](https://lodash.com/docs/4.17.15#debounce) < /br>
+[Lodash throttle](https://lodash.com/docs/4.17.15#throttle) </br>
+[Lodash debounce](https://lodash.com/docs/4.17.15#debounce) </br>
