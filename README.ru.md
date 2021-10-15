@@ -11,6 +11,7 @@
 
 * [Простое использование](#простое-использование)
 * [Расширенное использование](#расширенное-использование)
+* [Лодаш ссылки](#лодаш-ссылки)
 
 ## Простое использование
 
@@ -70,7 +71,7 @@ document.addEventListener('scroll', logWithDebounceOnIe);
 document.addEventListener('scroll', logWithDebounceOnIeAndDefaultWeak);
 ```
 
-## Ссылки на лодаш
+## Лодаш ссылки
 
-[Lodash throttle](https://lodash.com/docs/4.17.15#throttle).
-[Lodash debounce](https://lodash.com/docs/4.17.15#debounce).
+[Lodash throttle](https://lodash.com/docs/4.17.15#throttle){:target="_blank" rel="noopener"} < /br>
+[Lodash debounce](https://lodash.com/docs/4.17.15#debounce){:target="_blank" rel="noopener"} < /br>

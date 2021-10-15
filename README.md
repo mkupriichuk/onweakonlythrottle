@@ -11,6 +11,7 @@
 
 * [Basic usage](#basic-usage)
 * [Advanced usage](#advanced-usage)
+* [Lodash links](#lodash-links)
 
 ## Basic usage
 
@@ -70,5 +71,5 @@ document.addEventListener('scroll', logWithDebounceOnIeAndDefaultWeak);
 
 ## Lodash links
 
-[Lodash throttle](https://lodash.com/docs/4.17.15#throttle).
-[Lodash debounce](https://lodash.com/docs/4.17.15#debounce).
+[Lodash throttle](https://lodash.com/docs/4.17.15#throttle){:target="_blank" rel="noopener"} < /br>
+[Lodash debounce](https://lodash.com/docs/4.17.15#debounce){:target="_blank" rel="noopener"} < /br>
