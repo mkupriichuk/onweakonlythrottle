@@ -58,10 +58,10 @@ const isIE = /MSIE|Trident/.test(navigator.userAgent);
 
 const logWithDebounceOnIe = debounceOnWeak(_log, 300, _, isIE)
 /* !!Внимание!! Вам нужно передавать свое проверочное выражение четвертым аргументом,
-потому что третее - опции lodash.debounce/throttle (см. ссылки внизу) */
+потому что третье - опции lodash.debounce/throttle (см. ссылки внизу) */
 
 
-const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, _, {merge: true, exp: isIE})
+const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, {leading: true}, {merge: true, exp: isIE})
 /* Если Вы передаете в качестве проверки строку - она заменит собой стандартую (как в примере выше).
 Но Вы так же можете передать обьект с двумя опциями: merge: true и exp: ваше выражение.
 Тогда они будут слиты */

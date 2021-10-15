@@ -59,7 +59,7 @@ const logWithDebounceOnIe = debounceOnWeak(_log, 300, _, isIE)
 because is three - lodash.debounce/throttle options (see links below) */
 
 
-const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, _, {merge: true, exp: isIE})
+const logWithDebounceOnIeAndDefaultWeak = debounceOnWeak(_log, 300, {leading: true}, {merge: true, exp: isIE})
 /* if checker is a string it will replace the default one (as above).
 But you can pass a object with two parameters: merge: true and exp: your checker. Then they will merge */
 
