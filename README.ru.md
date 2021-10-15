@@ -1,5 +1,5 @@
 **Русский** | [English](./README.md)
-# throttleonweakdevice
+# Throttle on weak device
 
 > Легковесная библиотека, которая оборачивает Вашу функцию в  lodash throttle/debounce только на слабых устройствах 
 

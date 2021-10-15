@@ -1,5 +1,5 @@
 **English** | [Русский](./README.ru.md)
-# throttleonweakdevice
+# Throttle on weak device
 
 > A tiny lib for lodash throttle/debounce only on weak devices
 
