@@ -9,9 +9,16 @@
 
 ## Table of Contents
 
+* [Installation](#installation)
 * [Basic usage](#basic-usage)
 * [Advanced usage](#advanced-usage)
 * [Lodash links](#lodash-links)
+
+# Installation
+
+```sh
+$ npm install onweakonlythrottle
+```
 
 ## Basic usage
 
