@@ -23,7 +23,7 @@ $ npm install onweakonlythrottle
 ## Basic usage
 
 ```js
-import {throttleOnWeak, debounceOnWeak} from 'throttleonweakdevice'
+import {throttleOnWeak, debounceOnWeak} from 'onweakonlythrottle'
 
 function _log(n = 0) {
 	console.log(1 + n);
@@ -51,7 +51,7 @@ const _isWeakDevice =
 However you can replace it or merge with:
 
 ```js
-import {throttleOnWeak, debounceOnWeak} from 'throttleonweakdevice'
+import {throttleOnWeak, debounceOnWeak} from 'onweakonlythrottle'
 
 function _log(n = 0) {
 	console.log(1 + n);
